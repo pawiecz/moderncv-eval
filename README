@@ -1,0 +1,5 @@
+* moderncv-eval
+Create CV using most recent [[https://github.com/xdanaux/moderncv][moderncv]] class version
+** Purpose
+- Provide evaluation environment with [[https://github.com/xdanaux/moderncv/compare/f50d1cff324df184eb069b9aa21ea72e6c281bc0...master][patches not released]] to [[https://ctan.org/pkg/moderncv][CTAN]]
+- Provide evaluation environment prior creating Docker container image
