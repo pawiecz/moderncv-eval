@@ -1,5 +1,5 @@
 language: minimal
 dist: bionic
 install:
-  - apt-get install linux-headers-$(uname -r)
+  - sudo apt-get install linux-headers-$(uname -r)
 script: true
