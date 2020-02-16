@@ -1,8 +1,6 @@
 language: minimal
 dist: bionic
 before_install:
-  - sudo apt-get install linux-headers-$(uname -r)
-  - sudo apt-get install virtualbox
   - wget --no-verbose https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.deb
   - sudo dpkg --install vagrant_2.2.7_x86_64.deb
 install: vagrant up
@@ -10,3 +8,6 @@ script: systemctl status virtualbox
 addons:
   apt:
     update: true
+    packages:
+      - linux-headers-$(uname -r)
+      - virtualbox
