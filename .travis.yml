@@ -7,3 +7,6 @@ before_install:
   - sudo dpkg --install vagrant_2.2.7_x86_64.deb
 install: vagrant up
 script: systemctl status virtualbox
+addons:
+  apt:
+    update: true
